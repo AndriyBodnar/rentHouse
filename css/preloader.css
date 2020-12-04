@@ -1,0 +1,31 @@
+.preloader {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #000;
+  transition: 1s all;
+  visibility: visible;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+.preloader.done {
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #242b33;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #d4c17f;
+  border-radius: 15px;
+}
